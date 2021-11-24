@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@font-face {
+  font-family: "Heebo", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap");
+}
+@tailwind utilities;
+
+:root {
+  --primary: #ff6464;
+  --secondary: #00a8cc;
+  --dark: #21243d;
+  --light: #8695a4;
+  --blueLight: #edf7fa;
+}
+
+.home {
+  padding: 0;
+}
