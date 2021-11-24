@@ -45,7 +45,8 @@ export default {
       {
         id: 1,
         title: "Designing Dashboards",
-        imageUrl: "src/assets/img/featured1.png",
+        imageUrl:
+          "https://firebasestorage.googleapis.com/v0/b/blog-vue-a2f67.appspot.com/o/featured1.png?alt=media&token=417799ac-949f-4266-9cf1-10a618c44352",
         year: "2020",
         tag: "Dashboard",
         description:
@@ -54,7 +55,8 @@ export default {
       {
         id: 2,
         title: "Vibrant Portraits of 2020",
-        imageUrl: "src/assets/img/featured2.png",
+        imageUrl:
+          "https://firebasestorage.googleapis.com/v0/b/blog-vue-a2f67.appspot.com/o/featured2.png?alt=media&token=4fd698fb-6b4f-498e-bc57-5b9540e45ae7",
         year: "2018",
         tag: "Illustration",
         description:
@@ -63,7 +65,8 @@ export default {
       {
         id: 3,
         title: "36 Days of Malayalam type",
-        imageUrl: "src/assets/img/featured3.png",
+        imageUrl:
+          "https://firebasestorage.googleapis.com/v0/b/blog-vue-a2f67.appspot.com/o/featured3.png?alt=media&token=7c5784e5-e50b-474a-a3aa-c75d6992ba2b",
         year: "2018",
         tag: "Typography",
         description:
