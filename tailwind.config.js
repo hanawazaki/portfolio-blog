@@ -8,7 +8,8 @@ module.exports = {
         secondary: '#00A8CC',
         dark: '#21243D',
         light: '#8695A4',
-        blueLight: '#EDF7FA'
+        blueLight: '#EDF7FA',
+        greenCool: '#5BC1AC'
       }
     },
   },
