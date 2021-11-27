@@ -64,7 +64,7 @@ export default {
       isFixed.value = !isFixed.value;
     };
 
-    return { handleMobileMenu, isHidden };
+    return { handleMobileMenu, isHidden, isFixed };
   },
 };
 </script>

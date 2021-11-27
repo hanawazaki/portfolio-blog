@@ -1,15 +1,30 @@
 <template>
-  <div class="featured bg-white mb-20">
-    <div class="mx-36">
-      <h3 class="text-xl font-normal text-dark py-5 featured_title">
-        Featured works
+  <div class="featured bg-white mb-20 mt-10 md:mt-4">
+    <div class="md:mx-36">
+      <h3
+        class="
+          md:text-xl md:text-left
+          text-lg text-center
+          font-normal
+          text-dark
+          py-5
+          featured_title
+        "
+      >
+        My Projects
       </h3>
-      <div class="container" v-for="data in featured" :key="data.id">
-        <div class="featured_card flex">
-          <img :src="data.imageUrl" class="card-img w-60" alt="featured" />
-          <div class="card-content ml-5">
-            <h1 class="text-dark font-bold text-3xl mb-4">{{ data.title }}</h1>
-            <div class="tag flex px-0">
+      <div v-for="data in featured" :key="data.id">
+        <div class="featured_card flex flex-col md:flex-row items-center">
+          <img
+            :src="data.imageUrl"
+            class="card-img md:w-60 w-56.75"
+            alt="featured"
+          />
+          <div class="card-content md:ml-5 text-left">
+            <h1 class="text-dark font-bold mt-4 md:text-3xl text-2xl mb-4">
+              {{ data.title }}
+            </h1>
+            <div class="tag flex md:px-0 justify-start pl-0 mt-4">
               <span
                 class="
                   bg-dark
@@ -25,7 +40,9 @@
                 data.tag
               }}</span>
             </div>
-            <p class="text-dark text-base font-normal leading-6 featured_desc">
+            <p
+              class="text-dark text-base font-normal leading-6 md:w-58 w-56.75"
+            >
               {{ data.description }}
             </p>
           </div>
@@ -87,10 +104,5 @@ export default {
 
 .featured_title {
   line-height: 60px;
-}
-
-.featured_desc {
-  width: 580px;
-  margin-top: 17px;
 }
 </style>

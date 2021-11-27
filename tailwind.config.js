@@ -12,8 +12,10 @@ module.exports = {
         greenCool: '#5BC1AC'
       },
       spacing: {
+        56.5: '15rem',
+        56.75: '20rem',
         57: '31rem',
-        56.5: '15rem'
+        58: '36.25rem'
       },
       lineHeight: {
         '11': '60px'

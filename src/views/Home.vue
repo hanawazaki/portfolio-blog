@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <Hero />
-    <RecentPost />
-    <!-- <Featured />
-    <Footer /> -->
+    <!-- <RecentPost /> -->
+    <Featured />
+    <Footer />
   </div>
 </template>
 
