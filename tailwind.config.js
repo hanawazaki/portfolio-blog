@@ -10,6 +10,13 @@ module.exports = {
         light: '#8695A4',
         blueLight: '#EDF7FA',
         greenCool: '#5BC1AC'
+      },
+      spacing: {
+        57: '31rem',
+        56.5: '15rem'
+      },
+      lineHeight: {
+        '11': '60px'
       }
     },
   },

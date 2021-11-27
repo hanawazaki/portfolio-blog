@@ -11,7 +11,7 @@
           <router-link :to="{ name: 'Contact' }">Contact</router-link>
         </div>
         <!-- Mobile menu button -->
-        <div class="md:hidden w-auto z-50">
+        <div class="md:hidden w-auto z-50" :class="{ fixed: isFixed }">
           <button
             @click="handleMobileMenu()"
             class="outline-none mobile-menu-button"
@@ -57,9 +57,11 @@ import { ref } from "vue";
 export default {
   setup() {
     const isHidden = ref(true);
+    const isFixed = ref(false);
 
     const handleMobileMenu = () => {
       isHidden.value = !isHidden.value;
+      isFixed.value = !isFixed.value;
     };
 
     return { handleMobileMenu, isHidden };

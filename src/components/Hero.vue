@@ -1,14 +1,12 @@
 <template>
-  <div class="hero flex md:justify-between mt-8 md:mt-36 md:mx-36">
+  <div class="hero md:flex md:justify-between mt-8 md:mt-36 md:mx-36">
     <div
       class="
         text-dark text-3xl
-        flex flex-col
+        sm:flex sm:flex-col
         text-center
-        md:hero-text
-        w-full
-        md:w-2/3
-        items-center
+        sm:w-full
+        md:w-2/3 md:hero-text md:text-left
       "
     >
       <img
@@ -16,14 +14,34 @@
         class="w-44 mx-auto rounded-full md:hidden"
         alt=""
       />
-      <h1 class="md:text-lg mt-8 font-bold text-3xl">
-        Hi, I am <br />{{ data.name }},
+      <h1
+        class="
+          md:text-5xl md:font-semibold
+          mt-8
+          font-bold
+          text-3xl
+          md:leading-11
+        "
+      >
+        Hi, I am <br />{{ data.name }}
       </h1>
-      <h3>{{ data.role }}</h3>
-      <p class="md:mt-10 mt-5 w-full px-5 text-dark text-base mb-7 md:mb-12">
+      <h3 class="md:text-left md:leading-11 md:text-4xl font-medium">
+        {{ data.role }}
+      </h3>
+      <p
+        class="
+          mt-5
+          w-full
+          text-dark text-base
+          px-5
+          mb-7
+          md:mt-10 md:text-left md:mb-12 md:w-57 md:px-0
+        "
+      >
         {{ data.description }}
       </p>
       <a
+        href="#"
         class="
           btn
           bg-greenCool
@@ -31,9 +49,11 @@
           px-5
           py-2
           rounded-sm
-          mb-20
+          md:mb-20
           align-center
           w-56
+          mb-14
+          md:text-center
         "
       >
         Download Resume
@@ -42,7 +62,7 @@
     <div class="hero-photo w-1/3 hidden md:block">
       <img
         src="../assets/img/photo.jpg"
-        class="w-56 mx-auto rounded-full"
+        class="w-56.5 mx-auto rounded-full"
         alt=""
       />
     </div>
@@ -70,7 +90,7 @@ export default {
 </script>
 
 <style>
-.hero-text h1 {
+/* .hero-text h1 {
   font-size: 44px;
   font-weight: 600;
   line-height: 60px;
@@ -82,10 +102,5 @@ export default {
   font-weight: 600;
   line-height: 60px;
   color: #21243d;
-}
-
-.hero-text p {
-  width: 31rem;
-  line-height: 23px;
-}
+} */
 </style>
