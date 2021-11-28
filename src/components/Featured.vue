@@ -24,7 +24,7 @@
             <h1 class="text-dark font-bold mt-4 md:text-3xl text-2xl mb-4">
               {{ data.title }}
             </h1>
-            <div class="tag flex md:px-0 justify-start pl-0 mt-4">
+            <div class="tag flex md:px-0 justify-start pl-0 mt-3">
               <span
                 class="
                   bg-dark

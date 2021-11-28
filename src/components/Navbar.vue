@@ -6,7 +6,7 @@
         <!-- Primary Navbar items -->
         <div class="hidden md:flex">
           <router-link :to="{ name: 'Home' }">Home</router-link>
-          <router-link :to="{ name: 'Works' }">Works</router-link>
+          <router-link :to="{ name: 'Projects' }">Projects</router-link>
           <router-link :to="{ name: 'Blog' }">Blog</router-link>
           <router-link :to="{ name: 'Contact' }">Contact</router-link>
         </div>
@@ -37,7 +37,7 @@
               <router-link :to="{ name: 'Home' }">Home</router-link>
             </li>
             <li class="py-3">
-              <router-link :to="{ name: 'Works' }">Works</router-link>
+              <router-link :to="{ name: 'Projects' }">Projects</router-link>
             </li>
             <li class="py-3">
               <router-link :to="{ name: 'Blog' }">Blog</router-link>
