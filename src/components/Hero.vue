@@ -18,14 +18,14 @@
         class="
           md:text-5xl md:font-semibold
           mt-8
-          font-bold
-          text-3xl
+          font-semibold
+          text-2xl
           md:leading-11
         "
       >
         Hi, I am <br />{{ data.name }}
       </h1>
-      <h3 class="md:text-left md:leading-11 md:text-4xl font-medium">
+      <h3 class="md:text-left md:leading-11 md:text-4xl text-2xl font-medium">
         {{ data.role }}
       </h3>
       <p

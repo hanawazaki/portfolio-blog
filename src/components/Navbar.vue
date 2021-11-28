@@ -7,7 +7,7 @@
         <div class="hidden md:flex">
           <router-link :to="{ name: 'Home' }">Home</router-link>
           <router-link :to="{ name: 'Projects' }">Projects</router-link>
-          <router-link :to="{ name: 'Blog' }">Blog</router-link>
+          <!-- <router-link :to="{ name: 'Blog' }">Blog</router-link> -->
           <router-link :to="{ name: 'Contact' }">Contact</router-link>
         </div>
         <!-- Mobile menu button -->
@@ -34,16 +34,22 @@
         <div class="mobile-menu w-auto" :class="{ hidden: isHidden }">
           <ul class="fixed text-center bg-white inset-0 pt-14">
             <li class="active py-3">
-              <router-link :to="{ name: 'Home' }">Home</router-link>
+              <router-link @click="closeHamMenu" :to="{ name: 'Home' }"
+                >Home</router-link
+              >
             </li>
             <li class="py-3">
-              <router-link :to="{ name: 'Projects' }">Projects</router-link>
+              <router-link @click="closeHamMenu" :to="{ name: 'Projects' }"
+                >Projects</router-link
+              >
             </li>
-            <li class="py-3">
+            <!-- <li class="py-3">
               <router-link :to="{ name: 'Blog' }">Blog</router-link>
-            </li>
+            </li> -->
             <li class="py-3">
-              <router-link :to="{ name: 'Contact' }">Contact</router-link>
+              <router-link @click="closeHamMenu" :to="{ name: 'Contact' }"
+                >Contact</router-link
+              >
             </li>
           </ul>
         </div>
@@ -64,7 +70,11 @@ export default {
       isFixed.value = !isFixed.value;
     };
 
-    return { handleMobileMenu, isHidden, isFixed };
+    const closeHamMenu = () => {
+      handleMobileMenu();
+    };
+
+    return { handleMobileMenu, isHidden, isFixed, closeHamMenu };
   },
 };
 </script>

@@ -1,9 +1,14 @@
 <template>
-  <h1>WORKS</h1>
+  <div class="projects">
+    <Featured />
+  </div>
 </template>
 
 <script>
-export default {};
+import Featured from "../components/Featured.vue";
+export default {
+  components: { Featured },
+};
 </script>
 
 <style>

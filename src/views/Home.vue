@@ -3,7 +3,6 @@
     <Hero />
     <!-- <RecentPost /> -->
     <Featured />
-    <Footer />
   </div>
 </template>
 
@@ -11,10 +10,9 @@
 import Hero from "../components/Hero.vue";
 import RecentPost from "../components/RecentPost.vue";
 import Featured from "../components/Featured.vue";
-import Footer from "../components/Footer.vue";
 
 export default {
-  components: { Hero, RecentPost, Featured, Footer },
+  components: { Hero, RecentPost, Featured },
   setup() {},
 };
 </script>
